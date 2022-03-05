@@ -6,28 +6,34 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <TextView
-            android:text="Salada De Frutas"
+    <TextView android:id="@+id/nome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/nome"
+            android:text="Salada De Frutas"
+            android:layout_margin="16dp"
             tools:layout_editor_absoluteY="78dp"
             tools:layout_editor_absoluteX="80dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
     />
 
-    <TextView   android:id="@+id/descricao"
+    <TextView android:id="@+id/descricao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Laranja, manga e uva"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/nome"
     />
 
-    <TextView
+    <TextView android:id="@+id/valor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="19.99"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/descricao"
     />
 </androidx.constraintlayout.widget.ConstraintLayout>
