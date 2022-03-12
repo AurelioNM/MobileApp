@@ -49,7 +49,7 @@
                   android:textStyle="bold"
                   android:layout_marginTop="8dp"
                   android:textColor="@android:color/holo_green_dark"
-                  tools:text="19.99"
+                  tools:text="R$ 19.99"
                   app:layout_constraintEnd_toEndOf="@id/produto_item_nome"
                   app:layout_constraintStart_toStartOf="@id/produto_item_nome"
                   app:layout_constraintTop_toBottomOf="@id/produto_item_descricao"
