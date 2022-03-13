@@ -1,7 +1,9 @@
 package br.com.orgs.ui.activity
 
+import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import br.com.orgs.R
@@ -24,6 +26,16 @@ class ListaProdutosActivity : AppCompatActivity() {
         setContentView(binding.root)
         configuraRecyclerView()
         configuraFab()
+        AlertDialog.Builder(this)
+            .setTitle("titulo de teste")
+            .setMessage("mensagem de teste")
+            .setPositiveButton("Confirmar") { _, _ ->
+
+            }
+            .setNegativeButton("Cancelar") {_, _ ->
+
+            }
+            .show()
     }
 
     override fun onResume() {
