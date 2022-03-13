@@ -29,7 +29,7 @@ class ListaProdutosAdapter(
             val valor = binding.produtoItemValor
             val valorEmMoeda = formataParaModedaBrasileira(produto.valor)
             valor.text = valorEmMoeda
-            binding.imageView.load("https://s2.glbimg.com/7inpIUNcR9cTFdKl4Ib-lEZBToM=/0x0:724x483/984x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2019/05/15/frutas_variadas_nao_engordam.jpg")
+            binding.imageView.load(produto.imagem)
         }
 
         private fun formataParaModedaBrasileira(valor: BigDecimal): String? {
