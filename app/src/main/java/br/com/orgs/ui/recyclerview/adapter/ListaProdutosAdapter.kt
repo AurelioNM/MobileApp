@@ -2,9 +2,12 @@ package br.com.orgs.ui.recyclerview.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import br.com.orgs.R
 import br.com.orgs.databinding.ProdutoItemBinding
+import br.com.orgs.extensions.tentaCarregarImagem
 import br.com.orgs.model.Produto
 import coil.load
 import java.math.BigDecimal
@@ -29,7 +32,9 @@ class ListaProdutosAdapter(
             val valor = binding.produtoItemValor
             val valorEmMoeda = formataParaModedaBrasileira(produto.valor)
             valor.text = valorEmMoeda
-            binding.imageView.load(produto.imagem)
+
+            binding.imageView.tentaCarregarImagem(produto.imagem)
+
         }
 
         private fun formataParaModedaBrasileira(valor: BigDecimal): String? {
